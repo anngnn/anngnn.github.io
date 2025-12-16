@@ -1,6 +1,6 @@
-baseURL: "https://pushkardave.com/"
+baseURL: "https://anngn.com/"
 languageCode: "en-us"
-title: "Pushkar's Portfolio"
+title: "Portfolio"
 theme: hugo-profile
 
 outputs:
@@ -24,15 +24,15 @@ markup:
 
 Menus:
   main:
-    - identifier: About
-      name: About
-      title: About Me
-      url: /about
-      weight: 2
+    # - identifier: About
+    #   name: About
+    #   title: About Me
+    #   url: /about
+    #   weight: 2
     - identifier: github
       name: Github
       title: github Link
-      url: https://github.com/rdlynx19
+      url: https://github.com/anngnn
       weight: 2
     - identifier: resume
       name: Resume
@@ -59,7 +59,7 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Pushkar's Portfolio"
+  title: "Portfolio"
   description: MS Robotics @ Northwestern
   # staticPath: ""  # The path to serve the static files from
   favicon: "/headshot-modified.png"
@@ -82,7 +82,7 @@ params:
 
   theme:
     disableThemeToggle: true
-    defaultTheme: "light" # dark
+    defaultTheme: "dark" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -92,30 +92,30 @@ params:
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#007bff"
+    secondaryColor: "#f8f9fa"
 
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
+    darkmode:
+      textColor: "#212529"
+      secondaryTextColor: "#B27092"
+      textLinkColor: "#519e8a"
+      backgroundColor: "#F0F7EE"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#519e8a "
+      secondaryColor: "#C4D7F2"
 
   # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo:  # Logo for the brand | default is the favicon variable
     # showBrandLogo: true # Show brand logo in nav bar | default is true
-    brandName: "Pushkar Dave" # Brand name for the brand | default is the title variable
+    brandName: "An Nguyen" # Brand name for the brand | default is the title variable
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -134,7 +134,7 @@ params:
   # hero:
   #   enable: false
   #   intro: "Hi, my name is"
-  #   title: "Pushkar."
+  #   title: "An."
   #   subtitle: "I build things for the web"
   #   content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
   #   image: /images/hero.svg
@@ -312,238 +312,133 @@ params:
     title: "Featured Projects"
     items:
 
-    - title: Emergent Locomotion in a Handed Shearing Auxetic (HSA) Actuated Robot
-      content: MuJoCo based HSA actuation model, locomotion primitives and autonomous gait emergence through RL
-      image: /images/projects/hsa-rl/Inchworm.gif
-      featured:
-        name: Read More
-        link: /hsa-rl
-      badges:
-        - "Python"
-        - "Reinforcement Learning"
-        - "MuJoCo"
-        - "Simulation"
-        - "Modeling"
-      links:
-        - icon: fab fa-github
-          url: https://github.com/rdlynx19/EmergentHSALocomotion
-
-    - title: Collaborative Mapping using a Quadrotor and Quadruped
-      content: Building Occupancy Grids using RGBD odometry and 3D point clouds in a Multi-Robot setup
-      image: /images/projects/multi-robot/mrm-viz.gif
-      featured:
-        name: Read More
-        link: /multi-robot-mapping
-      badges:
-        - "C++"
-        - "ROS2"
-        - "Mapping"
-        - "Localization"
-        - "Docker"
-      links:
-        - icon: fab fa-github
-          url: https://github.com/rdlynx19/multi-robot-mapping
-
-    - title: Franka Plays Whack a Mole
-      content: ROS2 Package to make the 7-DOF Franka Robot play Whack-a-Mole using MoveIt2 and OpenCV.
-      image: /images/projects/franka-mole/franka.gif
+    - title: Self-Reconfigurable Quadruped from Scratch
+      content: A quadruped capable of walking, rolling, and bowling
+      image: /images/projects/quad/quad.gif
       featured:
           name: Read More
-          link: /franka-whack-a-mole
-      badges:
+          link: /quad
+      badges: 
+          - "C++"
           - "Python"
           - "ROS2"
+          - "YOLO"
+          - "CAD"
+      links:
+          - icon: fab fa-github
+            url: https://github.com/anngnn/self-reconfigurable-quadruped    
+
+
+    - title: The Pool-inator
+      content: The Franka Emika Panda 7-DoF arm plays pool autonomously using MoveIt2 and OpenCV
+      image: /images/projects/poolinator/pool.gif
+      featured:
+          name: Read More
+          link: /poolinator
+      badges:
+          - "Python"
+          - "ROS2 "
           - "MoveIt2"
           - "OpenCV"
       links:
           - icon: fab fa-github
-            url: https://github.com/ME495-EmbeddedSystems/finalproject-whack-a-mole
-
+            url: https://github.com/anngnn/poolinator
     
-       
-
-
-
-  # projects
+# projects 
   projects:
     enable: true
-    title: "Project Gallery"
+    title: "More Projects"
     items:
-      - title: Feedback Control of Omnidirectional Mobile Manipulator 
-        content: Controlling a KUKA YouBot to pick and place a cube in CoppeliaSim
-        image: /images/projects/kuka-sim/you-bot.gif
+
+      - title: Autonomous Aerial Painting with Quadrotors
+        content: Multi-agent control system enables drones to paint drawings
+        image: /images/projects/drone/drones-painting.gif
         featured:
           name: Read More
-          link: /kuka-sim
+          link: /aerial-painting
         badges:
           - "Python"
-          - "Kinematics"
-          - "CoppeliaSim"
-          - "Trajectory Generation"
-          - "Motion Planning"
+          - "CAD"
+          - "OptiTrack"
         links:
           - icon: fab fa-github
-            url: https://github.com/rdlynx19/KUKAYouBotSim
+            url: https://github.com/anngnn/aerial-painting/
+      
 
-      - title: Knuckles - Music Instrument
-        content: A digital music instrument modeled after the Knuckle-style controllers
-        image: /images/projects/knuckles/playback.gif
+      - title: KUKA youBot Mobile Manipulation
+        content: Trajectory planning and control of the youBot mobile manipulator in CoppeliaSim
+        image: /images/projects/kuka/youBot.gif
         featured:
           name: Read More
-          link: /knuckles
+          link: /kuka
         badges:
+          - "Python"
+          - "Trajectory Planning"
+          - "Manipulation"
+          - "Feedforward Control"
+        # links:
+        #   - icon: fab fa-github
+            # url: https://github.com/anngnn/
+      
+      - title: Clash of Hands
+        content: The Allegro Hand to play rock-paper-scissors using machine learning strategies that help it get smarter with every game
+        image: /images/projects/hand/hands.gif
+        featured:
+          name: Read More
+          link: /hands
+        badges:
+          - "C++"
+          - "Python"
+          - "Computer Vision"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rdlynx19/clash-of-hands
+
+      - title: Pen Stealer
+        content: The PincherX 100 robot grab a pen autonomously
+        image: /images/projects/pen/pen.gif
+        featured:
+          name: Read More
+          link: /pen-stealer
+        badges:
+          - "Python"
+          - "OpenCV"
+          - "Manipulation"
+        # links:
+        #   - icon: fab fa-github
+            # url: https://github.com/anngnn/
+
+      - title: Glowphonic
+        content: An interactive musical instrument with touch petals, IMU-based tremolo, and reactive lighting synchronized via ESP32 and Max/MSP
+        image: /images/projects/glowphonic/glow.gif
+        featured:
+          name: Read More
+          link: /glowphonic
+        badges:
+          - "C++"
           - "Arduino"
-          - "Max MSP"
+          - "Max/MSP"
           - "Digital Music"
         links:
           - icon: fab fa-github
-            url: https://github.com/rdlynx19/knuckles-max
+            url: https://github.com/anngnn/glowphonic/
 
-      - title: Multibody Dynamics Simulation
-        content: Simulating the physics of a jack bouncing around in a box
-        image: /images/projects/jack-sim/jack-sim.gif
+      - title: Poetic Lens
+        content: An AI pipeline that transforms photographs into poetry using computer vision and text generation
+        image: /images/projects/poetic-lens/poem-cat.gif
         featured:
           name: Read More
-          link: /jack-box-simulation
+          link: /poetic-lens
         badges:
           - "Python"
-          - "Dynamics"
-          - "Lagrangian Mechanics"
+          - "PyTorch"
+          - "Computer Vision"
+          - "Generative AI"
+          - "BLIP"
+          - "GPT-2"
         links:
           - icon: fab fa-github
-            url: https://github.com/rdlynx19/jack-box-sim
-      
-      - title: Low Level Motor Controller 
-        content: PID Control of a DC Motor using a custom PIC32MX170F256B microcontroller dev-board
-        image: /images/projects/motor-controller/motor.gif
-        featured:
-          name: Read More
-          link: /motor-controller
-        badges:
-          - "C"
-          - "PIC32"
-          - "Mechatronics"
-          - "PID Control"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/pic32MotorControl
-
-      - title: Quadrotor Control and Trajectory Generation
-        content: Generating a minimum snap trajectory and implementing PD control on a quadrotor
-        image: /images/projects/quad-matlab/helix-quad.gif
-        featured:
-          name: Read More
-          link: /quad-trajectory
-        badges:
-          - "MATLAB"
-          - "Trajectory Generation"
-          - "Control"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/quadrotor-control-and-trajectory-generation
-
-      # - title: Image Denoising using Convolutional Autoencoders
-      #   content: Implementation of an image-denoising autoencoder model on the MNIST dataset
-      #   image: /images/projects/denoising/image-denoising.png
-      #   featured:
-      #     name: Read More
-      #     link: /image-denoising
-      #   badges:
-      #     - "Python"
-      #     - "Deep Learning"
-      #     - "MNIST"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/ImageDenoisingAE
-    
-      # - title: Tethered UAV 2D Simulation
-      #   content: Simulation of a tethered UAV using Newtonian Dynamics and PD Control
-      #   image: /images/projects/taut-cable/taut-cable.gif
-      #   featured:
-      #     name: Read More
-      #     link: /taut-cable-sim
-      #   badges:
-      #     - "Python"
-      #     - "Dynamics"
-      #     - "Control"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/taut-cable-2D-control 
-      
-      - title: Trajectory Generation using Particle Swarm Optimization (PSO)
-        content: Solving the Traveling Salesman Problem (TSP) using PSO to generate quadrotor trajectories
-        image: /images/projects/pso-trajectory/pso-tracer.gif
-        featured:
-          name: Read More
-          link: /pso-trajectory
-        badges:
-          - "C++"
-          - "Particle Swarm Optimization"
-          - "Trajectory Generation"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/rdlynx19/pso-trajectory
-
-      # - title: SenseVR - SteamVR Compatible Headset
-      #   content: Custom Designed Virtual Reality Headset based on HadesVR
-      #   image: /images/projects/headset/headset2.JPG
-      #   featured:
-      #     name: Read More
-      #     link: /headset
-      #   badges:
-      #     - "Virtual Reality"
-      #     - "SteamVR"
-      #     - "Arduino"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/SenseVR
-
-      # - title: Rapidly Exploring Random Trees
-      #   content: Implementation of the RRT Path Finding Algorithm
-      #   image: /images/projects/rrt/obstacle-rrt.gif
-      #   featured:
-      #     name: Read More
-      #     link: /rrt-implementation
-      #   badges:
-      #     - "Python"
-      #     - "Path Planning"
-      #     - "RRT"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/RRT_Challenge
-
-      # - title: Maze Solving using Wavefront Algorithm
-      #   content: Implementation of the Wavefront Path Finding Algorithm
-      #   image: /images/projects/wavefront/maze1.gif
-      #   featured:
-      #     name: Read More
-      #     link: /wavefront-maze
-      #   badges:
-      #     - "Python"
-      #     - "Path Planning"
-      #     - "BFS"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/maze-solving
-
-      
-      
-
-      # - title: ESP32 Navigation Device 
-      #   content: ESP32 based Visual Navigation device using Bluetooth Communication and Frequency Detection
-      #   image: /images/projects/wayfinder/wayfinder.gif
-      #   featured:
-      #     name: Read More
-      #     link: /wayfinder
-      #   badges:
-      #     - "C++"
-      #     - "ESP32"
-      #     - "Microcontrollers"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/rdlynx19/ESP32-Wayfinder
-      
-      
+            url: https://github.com/anngnn/poetic-lens
 
   # Contact
   # contact:
@@ -551,7 +446,7 @@ params:
   #   # title: "Custom Name"
   #   content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
   #   btnName: Mail me
-  #   btnLink: mailto:pushkar@u.northwestern.edu
+  #   btnLink: mailto:an@u.northwestern.edu
   #   # formspree:
   #   #   enable: true # `contact.email` value will be ignored
   #   #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -567,9 +462,9 @@ params:
       enable: false
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com/rdlynx19
-      linkedin: https://www.linkedin.com/in/pushkar-dave/
-      email: pushkar@u.northwestern.edu
+      github: https://github.com/anngnn
+      linkedin: https://www.linkedin.com/in/an-ngn/
+      email: annguyen2025@u.northwestern.edu
       # twitter: https://twitter.com
       # instagram: https://instagram.com
       # facebook: https://facebook.com
@@ -580,7 +475,7 @@ params:
 
   # Single pages like blog and post
   singlePages:
-    socialShare: true
+    socialShare: True
     readTime:
       enable: false
       content: "min read"
@@ -593,7 +488,7 @@ params:
   terms:
     read: "Read"
     toc: "Table Of Contents"
-    copyright: "Pushkar Dave"
+    copyright: "An Nguyen"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
     social: GitHub

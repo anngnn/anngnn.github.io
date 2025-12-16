@@ -1,5 +1,5 @@
 ---
-title: "Pushkar Dave"
+title: "An Nguyen"
 date: 2025-10-09
 draft: false
 author: 
@@ -16,18 +16,14 @@ socialShare: false
   <div class="about-text">
     <p>
       Hi! I am an MS Robotics Student at Northwestern University.
-      I am currently working on simulating locomotion for a
-      <a href="https://github.com/rdlynx19/HSA" target="_blank">Handed Shearing Auxetics (HSA)</a> robot.
-      Previously, I was a summer intern at the Multi-robot Systems Group at Czech Technical University where I worked on compensating rangefinder noise using sensor fusion.
-      <br><br>
-      My ultimate goal is to develop algorithms for the safe deployment of robots in dense human environments.
+     
     </p>
-    Email: <a href="mailto:pushkar@u.northwestern.edu " target="_blank"> pushkar@u.northwestern.edu</a> <br>
-    Resume: <a href="https://pushkardave.com/resume" target="_blank"> Pushkar's Resume </a>
+    Email: <a href="mailto:annguyen2025@u.northwestern.edu " target="_blank"> annguyen2025@u.northwestern.edu</a> <br>
+    Resume: <a href="https://anngn.com/resume" target="_blank"> Resume </a>
   </div>
 
   <div class="about-image">
-    <img src="/images/misc/web-3.jpg" alt="Pushkar Dave" />
+    <img src="/images/misc/web-3.jpg" alt="An Nguyen" />
   </div>
 </div>
 
