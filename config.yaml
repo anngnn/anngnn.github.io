@@ -343,27 +343,26 @@ params:
       links:
           - icon: fab fa-github
             url: https://github.com/anngnn/poolinator
+
+    - title: Autonomous Aerial Painting with Quadrotors
+      content: Multi-agent control system enables drones to paint drawings
+      image: /images/projects/drone/drones-painting.gif
+      featured:
+        name: Read More
+        link: /aerial-painting
+      badges:
+        - "Python"
+        - "CAD"
+        - "OptiTrack"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/anngnn/aerial-painting/
     
 # projects 
   projects:
     enable: true
     title: "More Projects"
     items:
-
-      - title: Autonomous Aerial Painting with Quadrotors
-        content: Multi-agent control system enables drones to paint drawings
-        image: /images/projects/drone/drones-painting.gif
-        featured:
-          name: Read More
-          link: /aerial-painting
-        badges:
-          - "Python"
-          - "CAD"
-          - "OptiTrack"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/anngnn/aerial-painting/
-      
 
       - title: KUKA youBot Mobile Manipulation
         content: Trajectory planning and control of the youBot mobile manipulator in CoppeliaSim
@@ -439,6 +438,21 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/anngnn/poetic-lens
+
+      - title: Gripper and Droxel Design for Drone Construction
+        content: Designed a lightweight passive gripper and modular building block (droxel) enabling drones to reliably pick, carry, and place structures under strict weight and alignment constraints
+        image: /images/projects/droxel/drone-carry-drox.gif
+        featured:
+          name: Read More
+          link: /droxel-design
+        badges:
+          - "CAD"
+          - "Mechanical Design"
+          - "Passive Grippers"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/anngnn/aerial-painting/
+
 
   # Contact
   # contact:
