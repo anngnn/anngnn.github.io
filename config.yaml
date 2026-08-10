@@ -21,6 +21,18 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      # Hand math to MathJax verbatim. Without this, markdown parses inside $$ blocks:
+      # `}_k ... }_` turns into <em> tags, which splits the text node and stops MathJax
+      # from matching the $$ delimiters at all, so the equation renders as raw TeX.
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['$$', '$$']
+            - ['\[', '\]']
+          inline:
+            - ['\(', '\)']
 
 Menus:
   main:
@@ -422,22 +434,38 @@ params:
           - icon: fab fa-github
             url: https://github.com/anngnn/glowphonic/
 
-      - title: Poetic Lens
-        content: An AI pipeline that transforms photographs into poetry using computer vision and text generation
-        image: /images/projects/poetic-lens/poem-cat.gif
+      - title: Autonomous Vehicle Motion Planner
+        content: A layered motion-planning stack in C++ where a simulated car plans an A* route, samples smooth Frenet-frame trajectories, scores them, and drives itself around obstacles to the goal
+        image: /images/projects/av-planner/av-planner-demo.gif
         featured:
           name: Read More
-          link: /poetic-lens
+          link: /av-motion-planner
         badges:
-          - "Python"
-          - "PyTorch"
-          - "Computer Vision"
-          - "Generative AI"
-          - "BLIP"
-          - "GPT-2"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/anngnn/poetic-lens
+          - "C++"
+          - "Motion Planning"
+          - "Frenet Frame"
+          - "A*"
+          - "OpenCV"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/anngnn/av-motion-planner
+
+      # - title: Poetic Lens
+      #   content: An AI pipeline that transforms photographs into poetry using computer vision and text generation
+      #   image: /images/projects/poetic-lens/poem-cat.gif
+      #   featured:
+      #     name: Read More
+      #     link: /poetic-lens
+      #   badges:
+      #     - "Python"
+      #     - "PyTorch"
+      #     - "Computer Vision"
+      #     - "Generative AI"
+      #     - "BLIP"
+      #     - "GPT-2"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/anngnn/poetic-lens
 
       - title: Gripper and Droxel Design for Drone Construction
         content: Designed a lightweight passive gripper and modular building block (droxel) enabling drones to reliably pick, carry, and place structures under strict weight and alignment constraints
